@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impulso Digital 360 | CL Tech Solutions</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Impulso Digital 360 de CL Tech Solutions: páginas web de ventas para emprendedores, servicios y negocios de comida. Pago único, dominio y hosting 1 año incluidos.">
+  <meta name="keywords" content="página web para emprendedores, página web de ventas, web profesional, landing, CL Tech Solutions, Impulso Digital 360">
+  <meta name="author" content="CL Tech Solutions">
+
+  <!-- OG / Redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Impulso Digital 360 | Tu página web de ventas en 48 horas">
+  <meta property="og:description" content="Páginas web que venden, no solo que se ven bonitas. Pago único de $97, dominio y hosting 1 año incluidos.">
+  <meta property="og:image" content="URL_DE_TU_PREVIEW" />
+  <meta property="og:url" content="https://tudominio.com/impulso-digital-360" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clturq: "#11D7E3",
+            clblack: "#0C0E12",
+            clgray: "#1C1F25"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #05070b;
+    }
+    .bg-grid {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+      background-size: 32px 32px;
+    }
+    /* --- ESTILOS PARA EL FONDO DE PARTÍCULAS --- */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    /* Utilidad para modal visible/oculto */
+    .modal-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .modal-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body class="bg-clblack text-white bg-grid relative">
+
+  <!-- CANVAS PARTÍCULAS -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-30 border-b border-white/5 bg-clblack/80 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <!-- LOGO GRANDE -->
+      <a href="#inicio" class="flex items-center">
+        <img
+          src="https://i.postimg.cc/s2YtHvzB/IMG_0156.png"
+          alt="CL Tech Solutions"
+          class="h-14 sm:h-16 md:h-20 w-auto object-contain"
+        />
+      </a>
+
+      <!-- NAV -->
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#beneficios" class="text-white/70 hover:text-clturq transition">Beneficios</a>
+        <a href="#modelos" class="text-white/70 hover:text-clturq transition">Modelos $97</a>
+        <a href="#proceso" class="text-white/70 hover:text-clturq transition">Cómo funciona</a>
+        <a href="#planes" class="text-white/70 hover:text-clturq transition">Planes mensuales</a>
+        <a href="#faq" class="text-white/70 hover:text-clturq transition">Preguntas</a>
+      </nav>
+
+      <!-- CTA SIMPLE EN MOBILE -->
+      <div class="flex md:hidden">
+        <a href="#" data-open-form
+           class="px-3 py-1.5 text-xs font-semibold rounded-full bg-clturq text-clblack">
+          Aplicar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="pt-14 pb-16 md:pt-24 md:pb-24 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <!-- COPY HERO -->
+      <div>
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[11px] uppercase tracking-[0.2em] text-clturq mb-4">
+          Programa especial · Páginas web que venden
+        </span>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Páginas web para <span class="text-clturq">cerrar ventas</span>,<br>
+          no solo para “estar en Internet”.
+        </h1>
+
+        <p class="text-sm sm:text-base text-white/70 mb-6">
+          <strong>Impulso Digital 360</strong> es un sistema donde construimos tu
+          <strong>página web de ventas</strong> (para servicios, restaurantes o tiendas de productos),
+          con <strong>dominio y hosting incluidos por 1 año</strong>, botón directo a WhatsApp y
+          estructura pensada para que la gente te escriba y compre.
+        </p>
+
+        <!-- CTA PRINCIPAL -->
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <a href="#" data-open-form
+             class="inline-flex items-center justify-center px-5 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_14px_40px_rgba(17,215,227,0.65)] hover:-translate-y-[2px] hover:shadow-[0_20px_60px_rgba(17,215,227,0.85)] active:translate-y-0 active:shadow-none transition">
+            Aplicar ahora a Impulso Digital 360
+          </a>
+          <a href="#modelos"
+             class="inline-flex items-center justify-center px-5 py-3 text-sm font-semibold rounded-full border border-white/15 hover:border-clturq hover:text-clturq transition">
+            Ver modelos de página por $97
+          </a>
+        </div>
+
+        <!-- CUENTA REGRESIVA -->
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-clturq/40 bg-clblack/80 text-[11px]">
+          <span class="uppercase tracking-[0.2em] text-clturq font-semibold">Oferta limitada</span>
+          <span class="text-white/70">Precio especial $97 termina en:</span>
+          <span id="countdown" class="font-mono text-clturq font-semibold">--d --h --m --s</span>
+        </div>
+
+        <p class="text-[11px] text-white/50 mt-3 max-w-md">
+          Incluye dominio y hosting por 1 año. Luego de ese período, el dominio y el hosting se renuevan
+          anualmente solo si tú decides continuar.
+        </p>
+
+        <!-- TAGS -->
+        <div class="mt-6 flex flex-wrap gap-3 text-[11px] text-white/60">
+          <div class="px-3 py-1 rounded-full border border-white/10 bg-white/5">Entrega en 48 horas</div>
+          <div class="px-3 py-1 rounded-full border border-white/10 bg-white/5">Pago único · $97 USD</div>
+          <div class="px-3 py-1 rounded-full border border-white/10 bg-white/5">Dominio + hosting 1 año incluidos</div>
+        </div>
+      </div>
+
+      <!-- TARJETA HERO RESUMEN -->
+      <div class="relative">
+        <div class="absolute -top-8 -left-5 w-28 h-28 bg-clturq/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-10 -right-5 w-40 h-40 bg-clturq/10 rounded-full blur-3xl"></div>
+
+        <div class="relative rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-clgray/80 to-black/80 p-6 shadow-[0_25px_80px_rgba(0,0,0,0.75)] hover:-translate-y-1 hover:shadow-[0_32px_95px_rgba(0,0,0,0.9)] transition">
+          <p class="text-xs uppercase tracking-[0.22em] text-clturq mb-2">Programa Impulso Digital 360</p>
+          <h2 class="text-lg font-semibold mb-3">Lo que tienes con tu pago único de $97</h2>
+
+          <ul class="space-y-2 text-sm text-white/80 mb-4">
+            <li>• Página web profesional enfocada en ventas.</li>
+            <li>• Dominio y hosting incluidos por 1 año.</li>
+            <li>• Botón directo a tu WhatsApp con mensaje prearmado.</li>
+            <li>• Google Maps integrado para que te encuentren.</li>
+            <li>• SEO inicial (títulos y descripciones para Google).</li>
+            <li>• Diseño responsive para celular, tablet y computador.</li>
+          </ul>
+
+          <div class="flex items-baseline justify-between">
+            <div>
+              <p class="text-xs text-white/50 mb-1">Inversión única</p>
+              <p class="text-2xl font-bold text-clturq">$97<span class="text-sm text-white/50"> USD</span></p>
+              <p class="text-[11px] text-white/50">Sin mensualidades para la web. Dominio + hosting incluidos 1 año.</p>
+            </div>
+            <div class="flex flex-col items-end gap-1 text-[11px] text-white/60">
+              <span class="px-2 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/40 text-emerald-200">Ideal para tu primera página de ventas</span>
+              <span class="px-2 py-1 rounded-full bg-yellow-500/10 border border-yellow-400/40 text-yellow-100">Funciona para servicios, comida y productos</span>
+            </div>
+          </div>
+
+          <a href="#" data-open-form
+             class="mt-4 inline-flex items-center justify-center w-full px-5 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_16px_55px_rgba(17,215,227,0.8)] hover:-translate-y-[2px] hover:shadow-[0_24px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+            Quiero mi página web de ventas
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="py-14 md:py-20 border-t border-white/5 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">¿Por qué esto no es “otra página más”?</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-2xl">
+        La mayoría de páginas solo “informan”. Nosotros las construimos para que:
+        <strong>te escriban por WhatsApp, pidan tu comida, reserven tu servicio o hagan un pedido</strong>.
+        Todo el enfoque está en cerrar ventas, no en confundirte con mil opciones.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-clturq/60 hover:-translate-y-1 transition">
+          <h3 class="text-sm font-semibold mb-2 text-clturq">Estructura pensada para vender</h3>
+          <p class="text-sm text-white/70">
+            Títulos claros, secciones cortas, llamados a la acción y botones donde la gente los necesita. Sin relleno.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-clturq/60 hover:-translate-y-1 transition">
+          <h3 class="text-sm font-semibold mb-2 text-clturq">Dominio + hosting 1 año incluidos</h3>
+          <p class="text-sm text-white/70">
+            Tu sitio se publica con dominio propio y hosting por 12 meses. Después decides si renuevas o no.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-clturq/60 hover:-translate-y-1 transition">
+          <h3 class="text-sm font-semibold mb-2 text-clturq">Listo para automatización futura</h3>
+          <p class="text-sm text-white/70">
+            Cuando tu negocio esté listo, conectamos tu página con automatizaciones avanzadas de WhatsApp e IA.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3 text-sm">
+        <a href="#" data-open-form
+           class="px-5 py-2.5 rounded-full bg-clturq text-clblack text-sm font-semibold shadow-[0_12px_40px_rgba(17,215,227,0.7)] hover:-translate-y-[1px] hover:shadow-[0_16px_55px_rgba(17,215,227,0.9)] active:translate-y-0 active:shadow-none transition">
+          Aplicar ahora al programa
+        </a>
+        <a href="#" class="js-wa text-sm text-clturq underline underline-offset-4">
+          Prefiero hablar por WhatsApp con un asesor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELOS $97 -->
+  <section id="modelos" class="py-14 md:py-20 border-t border-white/5 bg-clgray/60 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">Tres tipos de páginas web por el mismo precio: $97 USD</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-3xl">
+        Elige el modelo que mejor se adapta a tu negocio. Todos incluyen armado completo, dominio y hosting 1 año,
+        botón a WhatsApp y estructura pensada para vender.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <!-- SERVICIOS -->
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 hover:border-clturq/60 hover:-translate-y-1 transition flex flex-col">
+          <p class="text-xs text-white/50 mb-1 uppercase tracking-[0.18em]">Modelo 1</p>
+          <h3 class="font-semibold mb-1 text-clturq">Página web para servicios</h3>
+          <p class="text-xs text-white/60 mb-3">
+            Ideal para abogados, contadores, cerrajeros, técnicos, consultorios, belleza, clases particulares y más.
+          </p>
+          <p class="text-2xl font-bold mb-2">$97<span class="text-xs text-white/50"> USD</span></p>
+          <p class="text-[11px] text-white/50 mb-3">Pago único · Dominio + hosting 1 año incluidos.</p>
+          <ul class="space-y-1 text-white/80 mb-4 flex-1">
+            <li>• Sección “Quién soy” o “Quiénes somos”.</li>
+            <li>• Servicios explicados de forma clara y simple.</li>
+            <li>• Testimonios y confianza (si ya tienes).</li>
+            <li>• Datos de contacto visibles y botón a WhatsApp.</li>
+            <li>• Google Maps integrado si atiendes en un lugar físico.</li>
+          </ul>
+          <a href="#" data-open-form
+             class="mt-auto inline-flex items-center justify-center w-full px-4 py-2.5 rounded-full bg-clturq text-clblack text-xs font-semibold shadow-[0_12px_40px_rgba(17,215,227,0.7)] hover:-translate-y-[1px] hover:shadow-[0_16px_55px_rgba(17,215,227,0.9)] active:translate-y-0 active:shadow-none transition">
+            Quiero una página para servicios
+          </a>
+        </div>
+
+        <!-- RESTAURANTES / COMIDA -->
+        <div class="rounded-2xl border border-clturq/60 bg-gradient-to-br from-clgray via-clblack to-black p-5 shadow-[0_18px_55px_rgba(0,0,0,0.8)] hover:-translate-y-1 transition flex flex-col">
+          <p class="text-xs text-white/60 mb-1 uppercase tracking-[0.18em]">Modelo 2 · Recomendado</p>
+          <h3 class="font-semibold mb-1 text-clturq">Página web para restaurantes y comida</h3>
+          <p class="text-xs text-white/60 mb-3">
+            Para hamburguesas, papas, pizzas, hot dogs, cafeterías, heladerías, comida rápida y locales pequeños.
+          </p>
+          <p class="text-2xl font-bold mb-2">$97<span class="text-xs text-white/50"> USD</span></p>
+          <p class="text-[11px] text-white/50 mb-3">Pago único · Dominio + hosting 1 año incluidos.</p>
+          <ul class="space-y-1 text-white/80 mb-4 flex-1">
+            <li>• Menú digital con fotos y descripciones.</li>
+            <li>• Sección de combos o promociones.</li>
+            <li>• Ubicación en Google Maps y horario.</li>
+            <li>• Botón de “Pedir por WhatsApp”.</li>
+            <li>• Estructura lista para conectar a delivery o QR en mesas.</li>
+          </ul>
+          <a href="#" data-open-form
+             class="mt-auto inline-flex items-center justify-center w-full px-4 py-2.5 rounded-full bg-clturq text-clblack text-xs font-semibold shadow-[0_16px_55px_rgba(17,215,227,0.9)] hover:-translate-y-[1px] hover:shadow-[0_22px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+            Quiero una página para mi restaurante
+          </a>
+        </div>
+
+        <!-- CATÁLOGO 20 PRODUCTOS -->
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 hover:border-clturq/60 hover:-translate-y-1 transition flex flex-col">
+          <p class="text-xs text-white/50 mb-1 uppercase tracking-[0.18em]">Modelo 3</p>
+          <h3 class="font-semibold mb-1 text-clturq">Página web catálogo (hasta 20 productos)</h3>
+          <p class="text-xs text-white/60 mb-3">
+            Para tiendas pequeñas: ropa, calzado, artículos escolares, bazar, ferretería, repuestos y más.
+          </p>
+          <p class="text-2xl font-bold mb-2">$97<span class="text-xs text-white/50"> USD</span></p>
+          <p class="text-[11px] text-white/50 mb-3">Pago único · Dominio + hosting 1 año incluidos.</p>
+          <ul class="space-y-1 text-white/80 mb-4 flex-1">
+            <li>• Hasta 20 productos con foto, nombre y precio.</li>
+            <li>• Selección tipo carrito (cliente marca lo que quiere).</li>
+            <li>• Envío del pedido directo a tu WhatsApp.</li>
+            <li>• Datos de entrega o retiro en tienda.</li>
+            <li>• Optimizada para que el cliente no se pierda.</li>
+          </ul>
+          <a href="#" data-open-form
+             class="mt-auto inline-flex items-center justify-center w-full px-4 py-2.5 rounded-full bg-clturq text-clblack text-xs font-semibold shadow-[0_12px_40px_rgba(17,215,227,0.7)] hover:-translate-y-[1px] hover:shadow-[0_16px_55px_rgba(17,215,227,0.9)] active:translate-y-0 active:shadow-none transition">
+            Quiero una página catálogo
+          </a>
+        </div>
+      </div>
+
+      <p class="text-[11px] text-white/50 mt-5">
+        Todos los modelos incluyen dominio y hosting por 1 año. Después de ese tiempo, la renovación anual
+        del dominio/hosting se paga aparte si decides seguir usando la página.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="py-14 md:py-20 border-t border-white/5 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">¿Cómo funciona el proceso?</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-2xl">
+        No queremos complicarte con lenguaje técnico. Este es el flujo:
+      </p>
+
+      <div class="grid md:grid-cols-4 gap-5 text-sm">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p class="text-xs text-white/50 mb-1">Paso 1</p>
+          <h3 class="font-semibold mb-1 text-clturq">Aplicación</h3>
+          <p class="text-white/70">Llenas el formulario con los datos de tu negocio y qué modelo de página te interesa.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p class="text-xs text-white/50 mb-1">Paso 2</p>
+          <h3 class="font-semibold mb-1 text-clturq">Material</h3>
+          <p class="text-white/70">Nos envías logo, fotos, textos clave y confirmas la forma de pago.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p class="text-xs text-white/50 mb-1">Paso 3</p>
+          <h3 class="font-semibold mb-1 text-clturq">Construcción</h3>
+          <p class="text-white/70">En máximo 48 horas construimos tu página, la conectamos con tu dominio y WhatsApp.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p class="text-xs text-white/50 mb-1">Paso 4</p>
+          <h3 class="font-semibold mb-1 text-clturq">Entrega & ajustes</h3>
+          <p class="text-white/70">Te la mostramos, hacemos ajustes finos y te entregamos todo funcionando.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3 text-sm">
+        <a href="#" data-open-form
+           class="px-5 py-2.5 rounded-full bg-clturq text-clblack text-sm font-semibold shadow-[0_12px_40px_rgba(17,215,227,0.7)] hover:-translate-y-[1px] hover:shadow-[0_16px_55px_rgba(17,215,227,0.9)] active:translate-y-0 active:shadow-none transition">
+          Quiero entrar al flujo y aplicar
+        </a>
+        <a href="#" class="js-wa text-sm text-clturq underline underline-offset-4">
+          Prefiero resolver dudas por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES MENSUALES OPCIONALES -->
+  <section id="planes" class="py-14 md:py-20 border-t border-white/5 bg-clgray/60 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">Cuando tu negocio crezca, puedes automatizar más</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-3xl">
+        Impulso Digital 360 es de pago único. Si más adelante tu negocio ya genera volumen de mensajes y ventas,
+        puedes sumar planes mensuales de automatización y contenido. No son obligatorios.
+        Todos mantienen tu dominio y hosting activos mientras se renueven anualmente.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-5 text-sm">
+        <!-- Plan 97/mes -->
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 hover:border-clturq/60 hover:-translate-y-1 transition">
+          <p class="text-xs text-white/50 mb-1 uppercase tracking-[0.18em]">Plan mensual</p>
+          <h3 class="font-semibold mb-1 text-clturq">Automatización Básica</h3>
+          <p class="text-2xl font-bold mb-1">$97<span class="text-xs text-white/50">/mes</span></p>
+          <p class="text-xs text-white/50 mb-3">Para negocios que ya reciben mensajes diarios.</p>
+          <ul class="space-y-1 text-white/80 mb-3">
+            <li>• Configuración de API WhatsApp.</li>
+            <li>• Flujo de bienvenida automático.</li>
+            <li>• Filtros básicos según tipo de cliente.</li>
+            <li>• Seguimiento 24 horas.</li>
+            <li>• Ajustes de SEO local y Google Maps.</li>
+          </ul>
+          <p class="text-[11px] text-white/50">
+            Ideal cuando ya no puedes responder manualmente a todos.
+          </p>
+        </div>
+
+        <!-- Plan 197/mes -->
+        <div class="rounded-2xl border border-clturq/60 bg-gradient-to-br from-clgray via-clblack to-black p-5 shadow-[0_18px_55px_rgba(0,0,0,0.8)] hover:-translate-y-1 transition">
+          <p class="text-xs text-white/60 mb-1 uppercase tracking-[0.18em]">Más vendido</p>
+          <h3 class="font-semibold mb-1 text-clturq">Automatización Completa</h3>
+          <p class="text-2xl font-bold mb-1">$197<span class="text-xs text-white/50">/mes</span></p>
+          <p class="text-xs text-white/50 mb-3">Para negocios que quieren sistemas serios.</p>
+          <ul class="space-y-1 text-white/80 mb-3">
+            <li>• Todo lo del plan básico.</li>
+            <li>• Chatbot personalizado con IA.</li>
+            <li>• Múltiples flujos en n8n conectados a tu web.</li>
+            <li>• Registro automático de leads en un CRM.</li>
+            <li>• Secuencias de seguimiento de 72h y 7 días.</li>
+            <li>• Reporte mensual simple.</li>
+          </ul>
+          <p class="text-[11px] text-white/50">
+            Convierte tu negocio en una máquina digital que vende incluso cuando duermes.
+          </p>
+        </div>
+
+        <!-- Plan 297/mes -->
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-5 hover:border-clturq/60 hover:-translate-y-1 transition">
+          <p class="text-xs text-white/50 mb-1 uppercase tracking-[0.18em]">Plan completo</p>
+          <h3 class="font-semibold mb-1 text-clturq">Premium Crecimiento</h3>
+          <p class="text-2xl font-bold mb-1">$297<span class="text-xs text-white/50">/mes</span></p>
+          <p class="text-xs text-white/50 mb-3">Para empresas que quieren escalar fuerte.</p>
+          <ul class="space-y-1 text-white/80 mb-3">
+            <li>• Web avanzada (hasta 5 secciones y mejoras continuas).</li>
+            <li>• Automatización PRO completa y monitoreo.</li>
+            <li>• 4 posts + 2 reels mensuales.</li>
+            <li>• Optimización constante del chatbot.</li>
+            <li>• Soporte prioritario.</li>
+          </ul>
+          <p class="text-[11px] text-white/50">
+            Recomendado para marcas que quieren presencia fuerte, sistema y contenido constante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14 md:py-20 border-t border-white/5 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">Preguntas frecuentes</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-2xl">
+        Estas son las dudas más comunes antes de entrar al programa.
+      </p>
+
+      <div class="space-y-4 text-sm">
+        <details class="group border border-white/10 rounded-2xl bg-white/5 p-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-white/90">¿El dominio y el hosting están incluidos?</span>
+            <span class="text-clturq group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="mt-3 text-white/70">
+            Sí. Con el pago de $97 tienes dominio y hosting incluidos por 1 año. Después de ese tiempo, si
+            quieres mantener la página activa, solo pagas la renovación anual del dominio/hosting.
+          </p>
+        </details>
+
+        <details class="group border border-white/10 rounded-2xl bg-white/5 p-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-white/90">¿Puedo elegir entre servicios, restaurante o catálogo?</span>
+            <span class="text-clturq group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="mt-3 text-white/70">
+            Sí. Tú eliges el modelo que mejor encaje con tu negocio: servicios, restaurante/comida o catálogo
+            de hasta 20 productos. El precio es el mismo: $97 USD, pago único.
+          </p>
+        </details>
+
+        <details class="group border border-white/10 rounded-2xl bg-white/5 p-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-white/90">¿Incluye automatización completa de WhatsApp?</span>
+            <span class="text-clturq group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="mt-3 text-white/70">
+            El programa de $97 incluye tu página web conectada a WhatsApp con un mensaje inicial prearmado.
+            La automatización avanzada (API, n8n, IA, chatbot) se contrata aparte con los planes mensuales,
+            cuando tu negocio ya esté listo para ese nivel.
+          </p>
+        </details>
+
+        <details class="group border border-white/10 rounded-2xl bg-white/5 p-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-white/90">¿Qué pasa si aún no tengo logo ni fotos?</span>
+            <span class="text-clturq group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="mt-3 text-white/70">
+            Podemos trabajar con fotos simples que tengas del celular y un diseño limpio. Más adelante
+            puedes mejorar tu identidad visual sin problema.
+          </p>
+        </details>
+
+        <details class="group border border-white/10 rounded-2xl bg-white/5 p-4">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-white/90">¿Qué pasa si después quiero más secciones o más productos?</span>
+            <span class="text-clturq group-open:rotate-180 transition">▼</span>
+          </summary>
+          <p class="mt-3 text-white/70">
+            Puedes contratar ampliaciones específicas (más secciones, más productos, blog, etc.) o pasar a
+            un plan superior donde ya trabajamos con una web más grande y automatización completa.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO / CTA FINAL -->
+  <section id="formulario" class="py-16 border-t border-white/5 bg-clgray/60 relative z-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-3">Aplica ahora a Impulso Digital 360</h2>
+      <p class="text-white/70 text-sm md:text-base mb-8 max-w-2xl mx-auto">
+        Llena el formulario y cuéntanos qué tipo de página necesitas (servicios, restaurante o catálogo).
+        Mientras más claro seas, más fácil será construir una página que realmente venda para tu negocio.
+      </p>
+
+      <div class="mb-8">
+        <a href="#" data-open-form
+           class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_16px_55px_rgba(17,215,227,0.9)] hover:-translate-y-[2px] hover:shadow-[0_22px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+          Abrir formulario de aplicación
+        </a>
+      </div>
+
+      <p class="text-xs text-white/50 mt-6">
+        Si prefieres, también puedes escribirnos directo por WhatsApp:<br>
+        <a href="#" class="js-wa text-clturq font-semibold underline underline-offset-4">
+          Hablar con un asesor por WhatsApp
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-6 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
+      <p>© <span id="year"></span> CL Tech Solutions · Todos los derechos reservados.</p>
+      <p class="text-[11px]">Programa: Impulso Digital 360 · Páginas web de ventas con dominio y hosting por 1 año.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL FORMULARIO -->
+  <div id="formModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-40 modal-hidden transition-opacity duration-200">
+    <div class="bg-clblack border border-white/15 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] flex flex-col overflow-hidden">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+        <p class="text-sm font-semibold text-white/90">Formulario de aplicación · Impulso Digital 360</p>
+        <button id="closeFormModal" class="h-7 w-7 flex items-center justify-center rounded-full bg-clgray text-white text-xs">
+          ✕
+        </button>
+      </div>
+      <div class="flex-1">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf4sAFruPMV7L7wnYLI55t4CRYSMw2BeCJlIC9XS-ABiqP8Cw/viewform?usp=header"
+          class="w-full h-full bg-white"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="#"
+     class="js-wa fixed bottom-4 right-4 z-40 inline-flex items-center justify-center h-14 w-14 rounded-full bg-clturq shadow-[0_12px_35px_rgba(17,215,227,0.9)] hover:-translate-y-[2px] hover:shadow-[0_18px_50px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+    <span class="sr-only">Hablar por WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-clblack" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.56 2 2.2 6.18 2.2 11.52c0 1.86.54 3.6 1.47 5.07L2 22l5.6-1.8a9.9 9.9 0 0 0 4.44 1.04c5.48 0 9.84-4.18 9.84-9.52C21.88 6.18 17.52 2 12.04 2Zm0 17.07c-1.5 0-2.9-.4-4.1-1.16l-.3-.18-3.32 1.07 1.08-3.2-.2-.32a7.7 7.7 0 0 1-1.2-4.06c0-4.28 3.54-7.76 7.84-7.76 4.3 0 7.84 3.48 7.84 7.76s-3.54 7.75-7.84 7.75Z"/>
+    </svg>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Año footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // WhatsApp centralizado
+    const WHATSAPP_NUMBER = "593999630862"; // 0999630862 en formato internacional
+    const WHATSAPP_MESSAGE = "Hola, estoy interesado en el programa Impulso Digital 360 y en una página web de ventas para mi negocio. Quisiera hablar con un asesor para que me explique las opciones y los modelos disponibles.";
+    const waLinks = document.querySelectorAll(".js-wa");
+    const waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_MESSAGE);
+    waLinks.forEach(a => {
+      a.href = waUrl;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    });
+
+    // Modal formulario
+    const formModal = document.getElementById("formModal");
+    const openFormButtons = document.querySelectorAll("[data-open-form]");
+    const closeFormButton = document.getElementById("closeFormModal");
+
+    function openFormModal() {
+      formModal.classList.remove("modal-hidden");
+      formModal.classList.add("modal-visible");
+    }
+    function closeFormModal() {
+      formModal.classList.add("modal-hidden");
+      formModal.classList.remove("modal-visible");
+    }
+
+    openFormButtons.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        openFormModal();
+      });
+    });
+
+    closeFormButton.addEventListener("click", () => {
+      closeFormModal();
+    });
+
+    formModal.addEventListener("click", (e) => {
+      if (e.target === formModal) {
+        closeFormModal();
+      }
+    });
+
+    // Cuenta regresiva (3 días desde que se carga la página)
+    const countdownEl = document.getElementById("countdown");
+    const offerDurationMs = 3 * 24 * 60 * 60 * 1000;
+    const offerEndTime = Date.now() + offerDurationMs;
+
+    function updateCountdown() {
+      const now = Date.now();
+      let diff = offerEndTime - now;
+
+      if (diff <= 0) {
+        countdownEl.textContent = "Últimas horas · Aprovecha ahora";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      diff -= days * 1000 * 60 * 60 * 24;
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      diff -= hours * 1000 * 60 * 60;
+      const minutes = Math.floor(diff / (1000 * 60));
+      diff -= minutes * 1000 * 60;
+      const seconds = Math.floor(diff / 1000);
+
+      countdownEl.textContent =
+        String(days).padStart(2, "0") + "d " +
+        String(hours).padStart(2, "0") + "h " +
+        String(minutes).padStart(2, "0") + "m " +
+        String(seconds).padStart(2, "0") + "s";
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // --- SCRIPT DE ANIMACIÓN DE PARTÍCULAS ---
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    resizeCanvas();
+
+    let particlesArray;
+    // Configuración del efecto
+    const config = {
+      particleCount: 80,
+      // Color adaptado al estilo turquesa de la página
+      particleColor: 'rgba(17, 215, 227, 0.7)',
+      particleSpeed: 0.5,
+      lineDistance: 120,
+      particleRadius: 2,
+    };
+
+    class Particle {
+      constructor(x, y, dX, dY, s, c) {
+        this.x = x; this.y = y;
+        this.directionX = dX; this.directionY = dY;
+        this.size = s; this.color = c;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+
+      update() {
+        if (this.x > canvas.width || this.x < 0) { this.directionX = -this.directionX; }
+        if (this.y > canvas.height || this.y < 0) { this.directionY = -this.directionY; }
+
+        this.x += this.directionX;
+        this.y += this.directionY;
+        this.draw();
+      }
+    }
+
+    function initParticles() {
+      particlesArray = [];
+      for (let i = 0; i < config.particleCount; i++) {
+        let s = (Math.random() * config.particleRadius) + 1;
+        let x = (Math.random() * (canvas.width - s * 2) + s * 2);
+        let y = (Math.random() * (canvas.height - s * 2) + s * 2);
+        let dX = (Math.random() * config.particleSpeed * 2) - config.particleSpeed;
+        let dY = (Math.random() * config.particleSpeed * 2) - config.particleSpeed;
+        particlesArray.push(new Particle(x, y, dX, dY, s, config.particleColor));
+      }
+    }
+
+    function connectParticles() {
+      let opacityValue = 1;
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          let distance = Math.sqrt(
+            Math.pow(particlesArray[a].x - particlesArray[b].x, 2) +
+            Math.pow(particlesArray[a].y - particlesArray[b].y, 2)
+          );
+          if (distance < config.lineDistance) {
+            opacityValue = 1 - (distance / config.lineDistance);
+            ctx.strokeStyle = `rgba(17, 215, 227, ${opacityValue * 0.25})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateParticles() {
+      requestAnimationFrame(animateParticles);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+      }
+      connectParticles();
+    }
+
+    window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+
+    initParticles();
+    animateParticles();
+  </script>
+</body>
+</html>
