@@ -7,7 +7,7 @@
 
   <!-- SEO básico -->
   <meta name="description" content="Impulso Digital 360 de CL Tech Solutions: te diseñamos una página web profesional valorada en $480 totalmente gratis. Solo pagas $97 por dominio y hosting 1 año. Especial para emprendedores luchadores en Ecuador." />
-  <meta name="keywords" content="páginas web para emprendedores, página web gratis, solo dominio y hosting, página web 97 dólares, página de ventas Ecuador, CL Tech Solutions, Impulso Digital 360" />
+  <meta name="keywords" content="páginas web para emprendedores, página web gratis, solo dominio y hosting, página web 97 dólares, página de ventas Ecuador, CL Tech Solutions, Impulso Digital 360, restaurantes, heladerías, servicios profesionales" />
   <meta name="author" content="CL Tech Solutions">
 
   <!-- OG / Redes -->
@@ -27,7 +27,8 @@
           colors: {
             clturq: "#11D7E3",
             clblack: "#05060A",
-            clgray: "#11141B"
+            clgray: "#11141B",
+            clred: "#EF4444"
           }
         }
       }
@@ -56,6 +57,9 @@
       height:100%;
       z-index:-1;
       pointer-events:none;
+    }
+    .neon-red{
+      text-shadow:0 0 6px rgba(248,113,113,0.9),0 0 16px rgba(248,113,113,0.7);
     }
   </style>
 </head>
@@ -97,6 +101,7 @@
       <div class="flex flex-col gap-2 text-white/80">
         <a href="#inicio" class="hover:text-clturq transition">Inicio</a>
         <a href="#oferta" class="hover:text-clturq transition">La oferta</a>
+        <a href="#modelos" class="hover:text-clturq transition">Modelos incluidos</a>
         <a href="#que-incluye" class="hover:text-clturq transition">Qué recibes</a>
         <a href="#pasos" class="hover:text-clturq transition">Cómo funciona</a>
         <a href="#final" class="hover:text-clturq transition">Último paso</a>
@@ -116,13 +121,18 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center">
         <!-- Texto -->
         <div>
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[11px] uppercase tracking-[0.22em] text-clturq mb-4">
-            Solo para emprendedores que ya dieron el primer paso
-          </span>
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[11px] uppercase tracking-[0.22em] text-clturq">
+              Solo para emprendedores que ya dieron el primer paso
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-clred/60 bg-clred/20 text-[11px] font-semibold text-clred">
+              ⚠ Últimos cupos · Última oportunidad
+            </span>
+          </div>
 
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
             Tu página web de
-            <span class="line-through text-white/50">$480</span><br>
+            <span class="line-through text-clred neon-red">$480</span><br>
             <span class="text-clturq">te la diseño GRATIS hoy.</span>
           </h1>
 
@@ -139,19 +149,24 @@
           <!-- Precio ancla + contador -->
           <div class="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center">
             <div class="px-4 py-3 rounded-2xl bg-clgray/80 border border-clturq/40 text-xs text-white/75">
-              <p class="mb-1">Oferta para emprendedores luchadores:</p>
+              <p class="mb-1">
+                <span class="text-clred font-bold">Oferta de emergencia para emprendedores luchadores:</span>
+              </p>
               <p>
-                <span class="line-through text-white/50 mr-1">$480</span>
+                <span class="line-through text-clred neon-red mr-1">$480</span>
                 <span class="text-clturq font-semibold">Diseño 100% GRATIS</span><br>
                 Solo pagas <strong>$97</strong> por dominio + hosting 1 año.
               </p>
+              <p class="mt-1 text-[11px] text-clred">
+                Si sales de esta página, es posible que no vuelvas a ver esta misma oferta.
+              </p>
             </div>
-            <div class="px-4 py-3 rounded-2xl bg-black/70 border border-white/15 text-center text-[11px]">
-              <p class="text-white/60 mb-1">Tiempo para aprovechar esta pantalla:</p>
+            <div class="px-4 py-3 rounded-2xl bg-black/70 border border-clred/70 text-center text-[11px]">
+              <p class="text-clred mb-1 font-semibold">⏳ Tiempo límite en esta pantalla</p>
               <div class="text-lg font-semibold">
                 <span id="cd-mins">15</span>:<span id="cd-secs">00</span>
               </div>
-              <p class="text-white/50 mt-1">Después, la oferta puede no estar disponible.</p>
+              <p class="text-white/60 mt-1">Cuando el contador llegue a 00:00, no garantizamos la misma condición.</p>
             </div>
           </div>
 
@@ -164,14 +179,14 @@
               Sí, quiero mi página gratis (pago solo dominio)
             </a>
 
-            <a href="#que-incluye"
+            <a href="#modelos"
                class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full border border-white/20 text-white/80 hover:border-clturq hover:text-clturq transition">
-              Ver qué incluye exactamente
+              Ver los 3 modelos incluidos
             </a>
           </div>
 
           <p class="text-[11px] text-white/55">
-            Ideal para: restaurantes, comida rápida, servicios profesionales, tiendas pequeñas y catálogos de productos.
+            Ideal para: restaurantes, comida rápida, heladerías, servicios profesionales, tiendas pequeñas y catálogos de productos.
           </p>
         </div>
 
@@ -188,7 +203,7 @@
 
             <ul class="space-y-2 text-sm text-white/80 mb-4">
               <li>• Página web de ventas de una sola página, pensada para vender y no solo “informar”.</li>
-              <li>• Diseño completo valorado en $480, incluido sin costo para ti.</li>
+              <li>• Diseño completo valorado en <span class="line-through text-clred neon-red">$480</span>, incluido sin costo para ti.</li>
               <li>• Dominio .com o similar por 1 año, a tu nombre.</li>
               <li>• Hosting 1 año, listo para recibir visitas y clientes.</li>
               <li>• Botón directo a tu WhatsApp para cerrar ventas rápido.</li>
@@ -200,7 +215,7 @@
               href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20ya%20vi%20lo%20que%20incluye%20la%20oferta%20y%20quiero%20mi%20p%C3%A1gina%20web%20de%20480%20gratis%2C%20pagando%20solo%20los%2097%20del%20dominio%20y%20hosting."
               target="_blank"
               class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_18px_60px_rgba(17,215,227,0.95)] hover:-translate-y-[2px] hover:shadow-[0_24px_80px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
-              Quiero aprovechar y asegurar mi página ahora
+              Quiero asegurar mi página antes de que cierre la oferta
             </a>
 
             <p class="mt-2 text-[11px] text-white/55 text-center">
@@ -211,8 +226,113 @@
       </div>
     </section>
 
+    <!-- MODELOS INCLUIDOS -->
+    <section id="modelos" class="py-16 border-t border-white/10 bg-clgray/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-2">
+              3 tipos de página incluidos en los mismos
+              <span class="text-clturq">$97</span> (diseño de <span class="line-through text-clred neon-red">$480</span> gratis)
+            </h2>
+            <p class="text-sm md:text-base text-white/75 max-w-3xl">
+              No pagas extra por el tipo de negocio. Con la misma inversión de <strong>$97</strong> puedes elegir
+              el modelo que mejor encaje con lo que haces.
+            </p>
+          </div>
+          <p class="text-[11px] text-white/55">
+            Pagas una sola vez los $97 del dominio y hosting. El diseño de $480 va incluido.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <!-- Servicios profesionales -->
+          <article class="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-clgray via-clblack to-black p-6 shadow-[0_22px_70px_rgba(0,0,0,0.9)]">
+            <p class="text-[11px] tracking-[0.25em] uppercase text-white/60 mb-1">Modelo 1</p>
+            <h3 class="text-lg font-semibold text-clturq mb-1">Servicios profesionales</h3>
+            <p class="text-xs text-white/70 mb-3">
+              Ideal para abogados, contadores, cerrajeros, técnicos, consultorios, belleza, entrenadores, clases, etc.
+            </p>
+            <p class="text-[13px] mb-2">
+              <span class="line-through text-clred neon-red mr-1">$480</span>
+              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+            </p>
+            <ul class="space-y-1.5 text-white/80 mb-4">
+              <li>• Sección “Quién soy / Quiénes somos”.</li>
+              <li>• Servicios explicados en lenguaje sencillo.</li>
+              <li>• Datos de contacto visibles.</li>
+              <li>• Botón “Escríbeme por WhatsApp” siempre a mano.</li>
+              <li>• Google Maps si atiendes en un lugar físico.</li>
+            </ul>
+            <a
+              href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20quiero%20aprovechar%20la%20oferta%20y%20tener%20mi%20p%C3%A1gina%20para%20SERVICIOS%20PROFESIONALES.%20S%C3%A9%20que%20el%20dise%C3%B1o%20vale%20480%20pero%20est%C3%A1%20gratis%20y%20solo%20pago%20los%2097%20del%20dominio%20y%20hosting."
+              target="_blank"
+              class="w-full inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-clturq text-clblack font-semibold text-sm shadow-[0_16px_55px_rgba(17,215,227,0.9)] hover:-translate-y-[2px] hover:shadow-[0_22px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+              Quiero la página para servicios
+            </a>
+          </article>
+
+          <!-- Restaurantes -->
+          <article class="relative overflow-hidden rounded-3xl border border-clturq/80 bg-gradient-to-b from-clgray via-clblack to-black p-6 shadow-[0_26px_80px_rgba(0,0,0,0.95)]">
+            <p class="text-[11px] tracking-[0.25em] uppercase text-white/70 mb-1">Modelo 2 · Recomendado</p>
+            <h3 class="text-lg font-semibold text-clturq mb-1">Restaurantes y comida</h3>
+            <p class="text-xs text-white/70 mb-3">
+              Para hamburguesas, papas, pizzas, hot dogs, cafeterías, cevicherías, comida rápida y locales pequeños.
+            </p>
+            <p class="text-[13px] mb-2">
+              <span class="line-through text-clred neon-red mr-1">$480</span>
+              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+            </p>
+            <ul class="space-y-1.5 text-white/80 mb-4">
+              <li>• Menú digital con platos principales y combos.</li>
+              <li>• Sección de promos o “menú del día”.</li>
+              <li>• Ubicación en Google Maps y horarios.</li>
+              <li>• Botón “Pedir por WhatsApp” listo para recibir pedidos.</li>
+              <li>• Lista para usar QR en mesas y delivery.</li>
+            </ul>
+            <a
+              href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20quiero%20aprovechar%20la%20oferta%20para%20RESTAURANTE%20O%20COMIDA.%20S%C3%A9%20que%20el%20dise%C3%B1o%20vale%20480%20pero%20est%C3%A1%20gratis%20y%20solo%20pago%20los%2097%20del%20dominio%20y%20hosting."
+              target="_blank"
+              class="w-full inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-clturq text-clblack font-semibold text-sm shadow-[0_16px_55px_rgba(17,215,227,0.9)] hover:-translate-y-[2px] hover:shadow-[0_22px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+              Quiero la página para restaurante
+            </a>
+          </article>
+
+          <!-- Heladerías -->
+          <article class="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-clgray via-clblack to-black p-6 shadow-[0_22px_70px_rgba(0,0,0,0.9)]">
+            <p class="text-[11px] tracking-[0.25em] uppercase text-white/60 mb-1">Modelo 3</p>
+            <h3 class="text-lg font-semibold text-clturq mb-1">Heladerías y postres</h3>
+            <p class="text-xs text-white/70 mb-3">
+              Ideal para heladerías, postres fríos, cafeterías dulces, pastelerías pequeñas y negocios de antojos.
+            </p>
+            <p class="text-[13px] mb-2">
+              <span class="line-through text-clred neon-red mr-1">$480</span>
+              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+            </p>
+            <ul class="space-y-1.5 text-white/80 mb-4">
+              <li>• Catálogo de sabores o postres principales.</li>
+              <li>• Sección de combos, conos, malteadas o vasos.</li>
+              <li>• Google Maps para que te encuentren rápido.</li>
+              <li>• Botón “Pedir por WhatsApp” para pedidos y reservas.</li>
+              <li>• Estructura lista para mostrar fotos muy llamativas.</li>
+            </ul>
+            <a
+              href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20quiero%20aprovechar%20la%20oferta%20para%20HELADER%C3%8DA%20O%20POSTRES.%20S%C3%A9%20que%20el%20dise%C3%B1o%20vale%20480%20pero%20est%C3%A1%20gratis%20y%20solo%20pago%20los%2097%20del%20dominio%20y%20hosting."
+              target="_blank"
+              class="w-full inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-clturq text-clblack font-semibold text-sm shadow-[0_16px_55px_rgba(17,215,227,0.9)] hover:-translate-y-[2px] hover:shadow-[0_22px_70px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
+              Quiero la página para heladería
+            </a>
+          </article>
+        </div>
+
+        <div class="mt-6 text-center text-[11px] text-white/60">
+          <p>Si tu negocio no encaja exactamente en estos 3, igual escríbeme: adaptamos el modelo a tu realidad sin cobrarte el diseño.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- SECCIÓN PARA QUIÉN ES -->
-    <section class="py-12 border-t border-white/10 bg-clgray/70">
+    <section class="py-12 border-t border-white/10 bg-clblack/95">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-3">Esta oferta NO es para todos</h2>
         <p class="text-sm md:text-base text-white/75 mb-6">
@@ -220,40 +340,45 @@
           que madrugan, que atienden, que cocinan, que venden, que estudian y se la juegan por su familia.
         </p>
         <div class="grid sm:grid-cols-3 gap-4 text-sm text-left">
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/40">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-clturq font-semibold mb-1">Si ya vendes algo</p>
-            <p class="text-white/75 text-xs">
+            <p class="text-xs text-white/75">
               Comida, servicios, ropa, útiles, repuestos, belleza, lo que sea. Ya tienes algo que ofrecer,
               solo te falta un lugar profesional donde cerrar la venta.
             </p>
           </div>
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/40">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-clturq font-semibold mb-1">Si te sientes emprendedor luchador</p>
-            <p class="text-white/75 text-xs">
+            <p class="text-xs text-white/75">
               No estás esperando milagros. Estás dispuesto a moverte, publicar, compartir tu página y atender a tus clientes.
             </p>
           </div>
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/40">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-clturq font-semibold mb-1">Si sabes que tu tiempo vale más</p>
-            <p class="text-white/75 text-xs">
+            <p class="text-xs text-white/75">
               Entiendes que perder meses “pensando” cuesta más caro que invertir ahora en tener tu página funcionando.
             </p>
           </div>
         </div>
 
-        <div class="mt-6">
+        <div class="mt-6 flex flex-col items-center gap-3">
           <a
             href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20soy%20emprendedor%20luchador%20y%20quiero%20mi%20p%C3%A1gina%20de%20480%20gratis.%20%C2%BFC%C3%B3mo%20aprovecho%20la%20oferta%20de%2097%20USD%20por%20dominio%20y%20hosting%3F"
             target="_blank"
             class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_18px_60px_rgba(17,215,227,0.95)] hover:-translate-y-[2px] hover:shadow-[0_24px_80px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
             Sí, me identifico · Quiero mi página gratis
           </a>
+          <button
+            onclick="window.location.href='#final';"
+            class="text-[11px] text-clred hover:underline">
+            O baja hasta el final antes de que se acabe el tiempo ⏳
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- QUÉ INCLUYE / TIPOS DE NEGOCIO -->
-    <section id="que-incluye" class="py-14 border-t border-white/10 bg-clblack/95">
+    <!-- QUÉ INCLUYE / DESCRIPCIÓN GENERAL -->
+    <section id="que-incluye" class="py-14 border-t border-white/10 bg-clgray/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-start">
         <div>
           <h2 class="text-2xl md:text-3xl font-semibold mb-3">¿Qué vas a tener exactamente online?</h2>
@@ -267,7 +392,7 @@
             <li>• Botón fijo y visible para hablarte por WhatsApp en un solo clic.</li>
             <li>• Sección preparada para agregar fotos de tus productos o platos fuertes.</li>
             <li>• Optimización básica para que Google empiece a mostrarte en tu ciudad.</li>
-            <li>• Preparada para que después conectemos automatizaciones cuando estés listo.</li>
+            <li>• Preparada para conectar automatizaciones cuando estés listo (n8n, bots, etc.).</li>
           </ul>
 
           <a
@@ -276,33 +401,36 @@
             class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_18px_60px_rgba(17,215,227,0.95)] hover:-translate-y-[2px] hover:shadow-[0_24px_80px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
             Listo, quiero esto para mi negocio
           </a>
+          <p class="mt-2 text-[11px] text-clred">
+            Si sigues bajando sin escribir, recuerda que el contador sigue corriendo…
+          </p>
         </div>
 
         <div>
           <h3 class="text-lg font-semibold text-clturq mb-3">Funciona perfecto si tu negocio es...</h3>
           <div class="grid sm:grid-cols-2 gap-4 text-sm">
-            <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
+            <div class="p-4 rounded-2xl border border-white/10 bg-clblack/60">
               <p class="font-semibold mb-1">Restaurantes y comida</p>
               <p class="text-xs text-white/75">
-                Hamburguesas, papas, pizzas, hot dogs, cafeterías, heladerías, comida rápida, cevicherías, etc.
+                Hamburguesas, papas, pizzas, hot dogs, cafeterías, cevicherías, comida rápida, etc.
               </p>
             </div>
-            <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
+            <div class="p-4 rounded-2xl border border-white/10 bg-clblack/60">
+              <p class="font-semibold mb-1">Heladerías y postres</p>
+              <p class="text-xs text-white/75">
+                Helados, malteadas, postres fríos, cafeterías dulces, vitrinas de antojos.
+              </p>
+            </div>
+            <div class="p-4 rounded-2xl border border-white/10 bg-clblack/60">
               <p class="font-semibold mb-1">Servicios profesionales</p>
               <p class="text-xs text-white/75">
                 Abogados, contadores, cerrajeros, técnicos, belleza, consultorios, clases, entrenadores, etc.
               </p>
             </div>
-            <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
+            <div class="p-4 rounded-2xl border border-white/10 bg-clblack/60">
               <p class="font-semibold mb-1">Tiendas pequeñas</p>
               <p class="text-xs text-white/75">
                 Ropa, calzado, artículos escolares, bazar, ferretería, repuestos, regalos, etc.
-              </p>
-            </div>
-            <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
-              <p class="font-semibold mb-1">Emprendimientos locales</p>
-              <p class="text-xs text-white/75">
-                Negocios familiares, marcas nuevas, proyectos que recién están saliendo a la luz.
               </p>
             </div>
           </div>
@@ -315,7 +443,7 @@
     </section>
 
     <!-- CÓMO FUNCIONA EN 3 PASOS -->
-    <section id="pasos" class="py-14 border-t border-white/10 bg-clgray/70">
+    <section id="pasos" class="py-14 border-t border-white/10 bg-clblack/95">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-3">Cómo funciona (sin enredos, sin tecnicismos)</h2>
         <p class="text-sm md:text-base text-white/75 mb-8 max-w-3xl mx-auto">
@@ -323,21 +451,21 @@
         </p>
 
         <div class="grid sm:grid-cols-3 gap-4 text-sm text-left">
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/45">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-[11px] text-white/55 mb-1">Paso 1</p>
             <p class="font-semibold text-clturq mb-1">Me escribes por WhatsApp</p>
             <p class="text-xs text-white/75">
               Te pregunto qué vendes, cómo se llama tu negocio y qué quieres lograr. Ahí decides si la oferta es para ti.
             </p>
           </div>
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/45">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-[11px] text-white/55 mb-1">Paso 2</p>
             <p class="font-semibold text-clturq mb-1">Me envías lo básico</p>
             <p class="text-xs text-white/75">
               Logo (si tienes), fotos (si tienes) y datos de contacto. Si no tienes nada, igual empezamos sencillo.
             </p>
           </div>
-          <div class="p-4 rounded-2xl border border-white/10 bg-black/45">
+          <div class="p-4 rounded-2xl border border-white/10 bg-clgray/70">
             <p class="text-[11px] text-white/55 mb-1">Paso 3</p>
             <p class="font-semibold text-clturq mb-1">En 48 horas ves tu página</p>
             <p class="text-xs text-white/75">
@@ -346,35 +474,42 @@
           </div>
         </div>
 
-        <div class="mt-7">
+        <div class="mt-7 flex flex-col items-center gap-3">
           <a
             href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20ya%20entend%C3%AD%20los%203%20pasos%20y%20quiero%20mi%20p%C3%A1gina%20de%20480%20gratis.%20%C2%BFCu%C3%A1l%20es%20el%20siguiente%20paso%20para%20pagar%20los%2097%20USD%20del%20dominio%20y%20hosting%3F"
             target="_blank"
             class="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_20px_70px_rgba(17,215,227,1)] hover:-translate-y-[3px] hover:shadow-[0_26px_90px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
             Ya entendí · Quiero que mi página sea la siguiente
           </a>
+          <p class="text-[11px] text-clred">
+            Cada día que postergas, alguien más ocupa el lugar que podría ser tuyo.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- SECCIÓN FINAL / CIERRE -->
-    <section id="final" class="py-16 border-t border-white/10 bg-clblack/95">
+    <section id="final" class="py-16 border-t border-white/10 bg-clgray/80">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <h2 class="text-2xl md:text-3xl font-semibold mb-3">Dos caminos desde aquí</h2>
         <p class="text-sm md:text-base text-white/75 mb-5">
           1) Cierras esta página, sigues vendiendo solo por WhatsApp y redes, y en 6 meses te preguntas por qué otros
           que empezaron después ya tienen página, QR, pedidos y más movimiento que tú.<br><br>
-          2) Me escribes ahora mismo, aseguras tu página de <strong>$480 gratis</strong> pagando solo los
+          2) Me escribes ahora mismo, aseguras tu página de
+          <span class="line-through text-clred neon-red">$480</span> pagando solo los
           <strong>$97 de dominio y hosting</strong>, y en 48 horas tienes un lugar profesional donde enviar a tus clientes.
         </p>
 
-        <div class="mt-4 mb-3">
+        <div class="mt-4 mb-3 flex flex-col items-center gap-3">
           <a
             href="https://wa.me/593999630862?text=Hola%20Cristian%2C%20no%20quiero%20seguir%20postergando.%20Quiero%20mi%20p%C3%A1gina%20web%20de%20480%20gratis%2C%20pagando%20solo%20los%2097%20USD%20de%20dominio%20y%20hosting.%20Ay%C3%BAdame%20a%20empezar."
             target="_blank"
             class="inline-flex items-center justify-center px-9 py-3 text-sm font-semibold rounded-full bg-clturq text-clblack shadow-[0_22px_80px_rgba(17,215,227,1)] hover:-translate-y-[3px] hover:shadow-[0_28px_100px_rgba(17,215,227,1)] active:translate-y-0 active:shadow-none transition">
             No quiero seguir perdiendo tiempo · Quiero mi página ahora
           </a>
+          <p class="text-[11px] text-clred">
+            Si vuelves “después”, probablemente vuelvas sin página y con el mismo problema.
+          </p>
         </div>
 
         <p class="text-[11px] text-white/55">
