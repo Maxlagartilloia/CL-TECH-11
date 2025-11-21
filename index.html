@@ -28,7 +28,7 @@
             clturq: "#11D7E3",
             clblack: "#05060A",
             clgray: "#11141B",
-            clred: "#EF4444"
+            clred: "#B91C1C"   /* rojo más oscurito */
           }
         }
       }
@@ -58,8 +58,20 @@
       z-index:-1;
       pointer-events:none;
     }
-    .neon-red{
-      text-shadow:0 0 6px rgba(248,113,113,0.9),0 0 16px rgba(248,113,113,0.7);
+    /* Animación de pulso/zoom para precios rojos */
+    @keyframes pricePulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+    .price-pulse{
+      color:#B91C1C;          /* rojo oscuro, limpio */
+      font-weight:700;
+      display:inline-block;
+      animation: pricePulse 1.1s ease-in-out infinite;
     }
   </style>
 </head>
@@ -132,7 +144,7 @@
 
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
             Tu página web de
-            <span class="line-through text-clred neon-red">$480</span><br>
+            <span class="line-through price-pulse text-4xl md:text-5xl">$480</span><br>
             <span class="text-clturq">te la diseño GRATIS hoy.</span>
           </h1>
 
@@ -142,8 +154,9 @@
           </p>
           <p class="text-sm sm:text-base text-white/75 mb-4">
             Por eso, con <strong>Impulso Digital 360</strong> tomamos el riesgo contigo:
-            <strong>el diseño completo de tu página web de ventas (valor real $480) va por nuestra cuenta.</strong><br>
-            Tú solo cubres el <strong>dominio y hosting 1 año: $97 USD.</strong>
+            <strong>el diseño completo de tu página web de ventas (valor real 
+              <span class="line-through text-clred">$480</span>) va por nuestra cuenta.</strong><br>
+            Tú solo cubres el <strong class="text-clturq text-lg">$97 USD</strong> de dominio y hosting 1 año.
           </p>
 
           <!-- Precio ancla + contador -->
@@ -152,10 +165,10 @@
               <p class="mb-1">
                 <span class="text-clred font-bold">Oferta de emergencia para emprendedores luchadores:</span>
               </p>
-              <p>
-                <span class="line-through text-clred neon-red mr-1">$480</span>
-                <span class="text-clturq font-semibold">Diseño 100% GRATIS</span><br>
-                Solo pagas <strong>$97</strong> por dominio + hosting 1 año.
+              <p class="text-sm">
+                <span class="line-through text-clred mr-1">$480</span>
+                <span class="text-clturq font-semibold text-base">$0 diseño</span><br>
+                Solo pagas <span class="text-clturq font-bold text-base">$97</span> por dominio + hosting 1 año.
               </p>
               <p class="mt-1 text-[11px] text-clred">
                 Si sales de esta página, es posible que no vuelvas a ver esta misma oferta.
@@ -203,7 +216,7 @@
 
             <ul class="space-y-2 text-sm text-white/80 mb-4">
               <li>• Página web de ventas de una sola página, pensada para vender y no solo “informar”.</li>
-              <li>• Diseño completo valorado en <span class="line-through text-clred neon-red">$480</span>, incluido sin costo para ti.</li>
+              <li>• Diseño completo valorado en <span class="line-through text-clred">$480</span>, incluido sin costo para ti.</li>
               <li>• Dominio .com o similar por 1 año, a tu nombre.</li>
               <li>• Hosting 1 año, listo para recibir visitas y clientes.</li>
               <li>• Botón directo a tu WhatsApp para cerrar ventas rápido.</li>
@@ -219,7 +232,7 @@
             </a>
 
             <p class="mt-2 text-[11px] text-white/55 text-center">
-              No pagas $480 hoy. Pagas solo $97 por todo el primer año.
+              No pagas $480 hoy. Pagas solo <span class="text-clturq font-semibold">$97</span> por todo el primer año.
             </p>
           </div>
         </div>
@@ -233,7 +246,7 @@
           <div>
             <h2 class="text-2xl md:text-3xl font-semibold mb-2">
               3 tipos de página incluidos en los mismos
-              <span class="text-clturq">$97</span> (diseño de <span class="line-through text-clred neon-red">$480</span> gratis)
+              <span class="text-clturq">$97</span> (diseño de <span class="line-through text-clred">$480</span> gratis)
             </h2>
             <p class="text-sm md:text-base text-white/75 max-w-3xl">
               No pagas extra por el tipo de negocio. Con la misma inversión de <strong>$97</strong> puedes elegir
@@ -254,8 +267,8 @@
               Ideal para abogados, contadores, cerrajeros, técnicos, consultorios, belleza, entrenadores, clases, etc.
             </p>
             <p class="text-[13px] mb-2">
-              <span class="line-through text-clred neon-red mr-1">$480</span>
-              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+              <span class="line-through text-clred text-base mr-1">$480</span>
+              <span class="text-clturq font-bold text-base">$0 diseño</span> · Solo pagas <span class="text-clturq font-bold text-base">$97</span> dominio + hosting.
             </p>
             <ul class="space-y-1.5 text-white/80 mb-4">
               <li>• Sección “Quién soy / Quiénes somos”.</li>
@@ -280,8 +293,8 @@
               Para hamburguesas, papas, pizzas, hot dogs, cafeterías, cevicherías, comida rápida y locales pequeños.
             </p>
             <p class="text-[13px] mb-2">
-              <span class="line-through text-clred neon-red mr-1">$480</span>
-              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+              <span class="line-through text-clred text-base mr-1">$480</span>
+              <span class="text-clturq font-bold text-base">$0 diseño</span> · Solo pagas <span class="text-clturq font-bold text-base">$97</span> dominio + hosting.
             </p>
             <ul class="space-y-1.5 text-white/80 mb-4">
               <li>• Menú digital con platos principales y combos.</li>
@@ -306,8 +319,8 @@
               Ideal para heladerías, postres fríos, cafeterías dulces, pastelerías pequeñas y negocios de antojos.
             </p>
             <p class="text-[13px] mb-2">
-              <span class="line-through text-clred neon-red mr-1">$480</span>
-              <span class="text-clturq font-bold">$0 diseño</span> · Solo pagas <strong>$97</strong> dominio + hosting.
+              <span class="line-through text-clred text-base mr-1">$480</span>
+              <span class="text-clturq font-bold text-base">$0 diseño</span> · Solo pagas <span class="text-clturq font-bold text-base">$97</span> dominio + hosting.
             </p>
             <ul class="space-y-1.5 text-white/80 mb-4">
               <li>• Catálogo de sabores o postres principales.</li>
@@ -496,8 +509,8 @@
           1) Cierras esta página, sigues vendiendo solo por WhatsApp y redes, y en 6 meses te preguntas por qué otros
           que empezaron después ya tienen página, QR, pedidos y más movimiento que tú.<br><br>
           2) Me escribes ahora mismo, aseguras tu página de
-          <span class="line-through text-clred neon-red">$480</span> pagando solo los
-          <strong>$97 de dominio y hosting</strong>, y en 48 horas tienes un lugar profesional donde enviar a tus clientes.
+          <span class="line-through text-clred">$480</span> pagando solo los
+          <strong class="text-clturq text-base">$97 de dominio y hosting</strong>, y en 48 horas tienes un lugar profesional donde enviar a tus clientes.
         </p>
 
         <div class="mt-4 mb-3 flex flex-col items-center gap-3">
